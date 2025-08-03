@@ -8,7 +8,7 @@
       "wasm": "target/wasm32-unknown-unknown/release/backend.wasm",
       "build": [
         "cargo build --target wasm32-unknown-unknown --release -p backend",
-        "candid-extractor target/wasm32-unknown-unknown/release/backend.wasm > backend/backend.did"
+        "bash -c 'candid-extractor target/wasm32-unknown-unknown/release/backend.wasm > backend/backend.did'"
       ],
       "metadata": [
         {
